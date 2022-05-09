@@ -284,7 +284,7 @@ body.dark-theme{
 }
 
 .scroll-header .change-theme{
-  color: var(--title-color);
+    --text-color-light: hsl(700, 12%, 75%);
 }
 /* Active link */
 .active-link{
@@ -315,12 +315,14 @@ body.dark-theme{
 }
 
 .home__title{
+  text-align: center;
   font-size: var(--biggest-font-size);
   line-height: 120%;
   margin-bottom: 1.25rem;
 }
 
 .home__description{
+  text-align: center;
   color:var(--text-color-light);
   margin-bottom: 2rem;
 }
@@ -353,6 +355,7 @@ body.dark-theme{
 .home__value{
   display: flex;
   column-gap: 2.5rem;
+  
 }
 
 .home__value-number{
@@ -843,7 +846,7 @@ body.dark-theme{
   background-color: hsl(700,8%,76%)
 }
 ::-webkit-scrollbar-thumb{
-  background-color: rgb(170, 187, 255);
+  --text-color-light: hsl(700, 12%, 75%);
   border-radius: .5rem;
 }
 
@@ -851,7 +854,9 @@ body.dark-theme{
   background-color: rgb(142, 164, 252);
   border-radius: .5rem;
 }
-
+.home__title span{
+  color:hsl(700,8%,76%) ;
+}
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
